@@ -1,13 +1,13 @@
 # Project Name
 
-> Project description
+> AirBnB
 
 ## Related Projects
 
-  - https://github.com/teamName/repo
-  - https://github.com/teamName/repo
-  - https://github.com/teamName/repo
-  - https://github.com/teamName/repo
+  - https://github.com/spicy-boiz/reservations-service
+  - https://github.com/spicy-boiz/photo-carousel-service
+  - https://github.com/spicy-boiz/places-to-stay-service
+  - https://github.com/spicy-boiz/reviews
 
 ## Table of Contents
 
