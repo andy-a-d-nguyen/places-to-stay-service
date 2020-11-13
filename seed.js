@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 const mockData = require('./seed_data.js');
-const Places = require('./db/controllers/place.js').placeModel;
+const Places = require('./db/controllers/place.js').PlaceModel;
 
 mongoose.connect('mongodb://localhost/places');
 

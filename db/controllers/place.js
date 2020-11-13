@@ -11,6 +11,6 @@ const placeSchema = mongoose.Schema({
   costPerNight: Number,
 });
 
-const placeModel = mongoose.model('Place', placeSchema);
+const PlaceModel = mongoose.model('Place', placeSchema);
 
-module.exports.placeModel = placeModel;
+module.exports.PlaceModel = PlaceModel;

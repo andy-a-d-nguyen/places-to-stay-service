@@ -17,6 +17,6 @@ const listingSchema = mongoose.Schema({
   morePlacesID12: Number,
 });
 
-const listingModel = mongoose.model('Listing', listingSchema);
+const ListingModel = mongoose.model('Listing', listingSchema);
 
-module.exports.listingModel = listingModel;
+module.exports.ListingModel = ListingModel;
