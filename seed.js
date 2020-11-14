@@ -1,31 +1,46 @@
 const mongoose = require('mongoose');
-const mockData = require('./seed_data.js');
-const Places = require('./db/controllers/place.js').PlaceModel;
+const faker = require('faker');
+const { PlaceModel } = require('./db/controllers/place.js');
+const { ListingModel } = require('./db/controllers/listing.js');
 
-mongoose.connect('mongodb://localhost/places');
+mongoose.connect('mongodb://localhost/listings');
 
-const seedDb = (data) => {
+const seedDb = () => {
+  const listings = [];
   let i = 0;
-  while (i <= 100) {
-    const place = {
-      listingID: data.listingID,
-      pictureURL: data.pictureURL,
-      locationName: data.locationName,
-      score: data.score,
-      reviewCount: data.reviewCount,
-      roomType: data.roomType,
-      bedCount: data.bedCount,
-      costPerNight: data.costPerNight,
-    };
-    Places.create(place, (err, data) => {
-      if (err) {
-        console.log(err);
-      } else {
-        console.log('success inserting places');
-      }
+  while (i < 100) {
+    const newListing = new ListingModel({
+      listingID: i,
+      listingName: faker.address.streetName(),
+      morePlacesID: [],
     });
+    let j = 0;
+    while (j < 12) {
+      const newPlace = new PlaceModel({
+        listingID: Math.floor(Math.random() * 100),
+        pictureURL: 'https://loremflickr.com/320/240/interior',
+        locationName: faker.address.streetName(),
+        liked: false,
+        score: parseFloat(((Math.random() * 5) + 1).toFixed(2)),
+        reviewCount: Math.floor(Math.random() * 200),
+        roomType: faker.commerce.productName(),
+        roomName: faker.commerce.productName(),
+        bedCount: Math.floor(Math.random() * 2) + 1,
+        costPerNight: Math.floor(Math.random() * 200) + 30,
+      });
+      newListing.morePlacesID.push(newPlace);
+      j += 1;
+    }
+    listings.push(newListing);
     i += 1;
   }
+  ListingModel.create(listings, (err, data) => {
+    if (err) {
+      console.log(err);
+    } else {
+      mongoose.disconnect();
+    }
+  });
 };
 
-seedDb(mockData);
+seedDb();
