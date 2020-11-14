@@ -10,7 +10,9 @@
   },
   "scripts": {
     "react-dev": "webpack",
-    "test": "jest"
+    "test": "jest",
+    "seed": "node seed.js",
+    "server": "nodemon server/index.js"
   },
   "dependencies": {
     "express": "^4.17.1",
