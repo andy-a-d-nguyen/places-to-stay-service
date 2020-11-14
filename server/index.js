@@ -1,25 +1,19 @@
 const express = require('express');
 const mongoose = require('mongoose');
-const placeController = require('../db/controllers/place.js').PlaceModel; // refactor to move into its own component
+// import the route handler
+const listingRouter = require('./routers/listing.js');
 
 const PORT = 3004;
 
 const app = express();
 
-mongoose.connect('mongodb://localhost/places');
+// connect to the listings database
+mongoose.connect('mongodb://localhost/listings');
 
 app.use(express.json());
 
-// move this function to its own component
-app.get('/api/rooms/id', (req, res) => {
-  placeController.find((err, data) => {
-    if (err) {
-      console.log(err);
-    } else {
-      res.status(200).json(data);
-    }
-  });
-});
+// use the route handler
+app.use('/', listingRouter);
 
 app.listen(PORT, () => {
   console.log(`more places module listening on http://localhost/${PORT}`);
