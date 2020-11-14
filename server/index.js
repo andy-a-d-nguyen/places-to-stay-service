@@ -10,6 +10,7 @@ mongoose.connect('mongodb://localhost/places');
 
 app.use(express.json());
 
+// move this function to its own component
 app.get('/api/rooms/id', (req, res) => {
   placeController.find((err, data) => {
     if (err) {

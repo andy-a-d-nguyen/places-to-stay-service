@@ -1,22 +1,16 @@
 const mongoose = require('mongoose');
+const { placeSchema } = require('./place.js');
 
 const listingSchema = mongoose.Schema({
   listingID: { type: Number, unique: true },
   listingName: String,
-  morePlacesID1: Number,
-  morePlacesID2: Number,
-  morePlacesID3: Number,
-  morePlacesID4: Number,
-  morePlacesID5: Number,
-  morePlacesID6: Number,
-  morePlacesID7: Number,
-  morePlacesID8: Number,
-  morePlacesID9: Number,
-  morePlacesID10: Number,
-  morePlacesID11: Number,
-  morePlacesID12: Number,
+  morePlacesID: [placeSchema], // an array of URLs or objects
 });
-
+// 100 unique listings, each rendering a unique carousel
+// make moreplacesID an array of URLS or objects
+// redo seed data
 const ListingModel = mongoose.model('Listing', listingSchema);
 
-module.exports.ListingModel = ListingModel;
+module.exports = {
+  ListingModel,
+};
