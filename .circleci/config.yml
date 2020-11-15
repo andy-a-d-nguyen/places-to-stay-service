@@ -3,13 +3,15 @@ orbs: # declare what orbs we are going to use
 
 version: 2.1 # using 2.1 provides access to orbs and other features
 
-jobs:
-  build:
-    steps:
-      - checkout
-      - run:
-        name: Install dependencies
-        command: npm ci
-      - run:
-        name: Run Tests
-        command: npm test
+workflows:
+  app-tests:
+    jobs:
+      build:
+        steps:
+          - checkout
+          - run:
+              name: Install dependencies
+              command: npm ci
+          - run:
+              name: Run Tests
+              command: npm run test
