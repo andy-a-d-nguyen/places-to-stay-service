@@ -1,4 +1,7 @@
 const { MongoClient } = require('mongodb');
+const request = require('supertest');
+const mongoose = require('mongoose');
+const app = require('./server/app.js');
 
 describe('insert', () => {
   let connection;
@@ -28,5 +31,15 @@ describe('insert', () => {
 
     const insertedListing = await listings.findOne({ listingID: 1 });
     expect(insertedListing).toEqual(mockListing);
+  });
+});
+
+describe('Test the root path', () => {
+  test('It should respond to a GET request for a listing', () => {
+    return request(app)
+      .get('/')
+      .then((res) => {
+        expect(res.statusCode).toBe(200);
+      });
   });
 });
