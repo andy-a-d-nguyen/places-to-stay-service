@@ -16,7 +16,4 @@ router.route('/api/rooms/:id')
     });
   });
 
-// router.route('/:id')
-//   .get((req, res) => {});
-
 module.exports = router;
