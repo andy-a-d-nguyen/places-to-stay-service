@@ -1,3 +1,4 @@
+/* eslint-disable */
 const { MongoClient } = require('mongodb');
 const request = require('supertest');
 const mongoose = require('mongoose');
@@ -34,12 +35,13 @@ describe('insert', () => {
   });
 });
 
-describe('Test the root path', () => {
-  test('It should respond to a GET request for a listing', () => {
-    return request(app)
-      .get('/')
-      .then((res) => {
-        expect(res.statusCode).toBe(200);
-      });
-  });
-});
+// describe('Test the root path', () => {
+//   test('It should respond to a GET request', () => {
+//     return request(app)
+//       .get('/')
+//       .then((res) => {
+//         expect(res.statusCode).toBe(200);
+//       });
+//   });
+// });
+

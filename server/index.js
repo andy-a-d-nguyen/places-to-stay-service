@@ -16,6 +16,12 @@ mongoose.connect('mongodb://localhost/listings');
 // use the route handler
 // app.use('/', listingRouter);
 
+// if (process.env.NODE_ENV !== 'test') {
+//   app.listen(PORT, () => {
+//     console.log(`more places module listening on http://localhost/${PORT}`);
+//   });
+// }
+
 app.listen(PORT, () => {
   console.log(`more places module listening on http://localhost/${PORT}`);
 });
