@@ -2,7 +2,7 @@
 const { MongoClient } = require('mongodb');
 const request = require('supertest');
 const mongoose = require('mongoose');
-const app = require('./server/app.js');
+const app = require('../server/app.js');
 
 describe('insert', () => {
   let connection;
