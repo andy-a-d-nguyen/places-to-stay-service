@@ -1,12 +1,12 @@
+/* eslint-disable */
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Places from './components/App.jsx';
 
 const App = () => {
   return (
-    <div>
-      Hello World
-    </div>
+    <Places />
   )
-};
+}
 
 ReactDOM.render(<App />, document.getElementById('app'));
