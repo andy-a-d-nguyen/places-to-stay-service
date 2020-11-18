@@ -45,7 +45,39 @@ class Listing extends React.Component {
       <div >
         <div className={styles.sliderContainerWrapper}>
           <div className={styles.sliderContainer}>
-            <div>More places to stay</div>
+            <div className={styles.sliderContainerTop}>
+              <div className={styles.sliderContainerTop_left1}>
+                <div className={styles.sliderContainerTop_left1_1}>
+                  <section>
+                    <h2 className={styles.sliderContainerTop_left1_1_1}>
+                      More places to stay
+                    </h2>
+                  </section>
+                </div>
+              </div>
+              <div className={styles.sliderContainerTop_right}>
+                <div className={styles.leftArrowContainerWrapper}>
+                  <button className={styles.leftArrowContainer} type='button'>
+                    <span>
+                      <svg viewBox="0 0 18 18" className={styles.leftArrow}>
+                        <path d="m13.7 16.29a1 1 0 1 1 -1.42 1.41l-8-8a1 1 0 0 1 0-1.41l8-8a1 1 0 1 1 1.42 1.41l-7.29 7.29z">
+                        </path>
+                      </svg>
+                    </span>
+                  </button>
+                </div>
+                <div className={styles.rightArrowContainerWrapper}>
+                  <button className={styles.rightArrowContainer} type='button'>
+                    <span>
+                      <svg viewBox="0 0 18 18" className={styles.rightArrow}>
+                        <path d="m4.29 1.71a1 1 0 1 1 1.42-1.41l8 8a1 1 0 0 1 0 1.41l-8 8a1 1 0 1 1 -1.42-1.41l7.29-7.29z">
+                        </path>
+                      </svg>
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
             <div className={styles.sliderContainerBottom}>
               <ul className={styles.slider}>
                 {places.map((place, key) => {

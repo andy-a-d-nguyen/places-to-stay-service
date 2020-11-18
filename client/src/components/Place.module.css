@@ -188,7 +188,7 @@
   overflow: visible;
 }
 
-.imageWrapper2_bottom {
+/* .imageWrapper2_bottom {
   -webkit-box-pack: justify;
   -webkit-box-align: center;
   display: flex;
@@ -200,7 +200,6 @@
 }
 
 .imageWrapper2_bottom_leftside {
-  display: block;
   border: 0px;
   pointer-events: auto;
   background-color: transparent;
@@ -208,7 +207,6 @@
 }
 
 .imageWrapper2_bottom_rightside {
-  display: block;
   border: 0px;
   pointer-events: auto;
   background-color: transparent;
@@ -220,7 +218,7 @@
   display: flex;
   justify-content: center;
   white-space: nowrap;
-}
+} */
 
 .scoreAndReviewSectionWrapper {
   margin-bottom: 6px;
@@ -233,7 +231,6 @@
 }
 
 .scoreAndReviewSection1 {
-  display: block;
   margin-right: 10px;
   animation-duration: 0.3s;
   animation-name: keyframe_18jn58a;
@@ -264,14 +261,6 @@
   fill: currentcolor;
 }
 
-svg:not(:root) {
-  overflow: hidden;
-}
-
-:not(svg) {
-  transform-origin: 0px 0px;
-}
-
 .placeScore {
   color: rgb(34, 34, 34) ;
 }
@@ -282,7 +271,7 @@ svg:not(:root) {
 
 .roomAndBedSectionWrapper {
   margin-bottom: 2px;
-  color: var(--card-typography-color-primary, #222222);
+  color: #222222;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -297,23 +286,14 @@ svg:not(:root) {
 .roomAndBedSection {
   margin: 0px;
   padding: 0px;
-  margin-block-start: 0px;
-  margin-block-end: 0px;
-  display: block;
-  list-style-type: decimal;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  padding-inline-start: 40px;
 }
 
 .roomSection {
   display: inline-block ;
-  text-align: -webkit-match-parent;
 }
 
 .bedSection {
   display: inline-block;
-  text-align: -webkit-match-parent;
 }
 
 .roomNameSection {
@@ -324,7 +304,7 @@ svg:not(:root) {
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
   font-weight: 400;
-  color: var(--card-typography-color-primary, #222222);
+  color: #222222;
   word-break: break-all;
   font-size: 16px;
   line-height: 20px;
@@ -333,7 +313,6 @@ svg:not(:root) {
 .costSectionWrapper {
   margin-top: 4px;
   position: relative;
-  display: block;
 }
 
 .costSection {

@@ -7,24 +7,24 @@ const Place = ({place}) => {
   // console.log(place);
   return (
     <li className={styles.slideContainerWrapper}>
-      <div className = { styles.slideContainer1 }>
-        <div className = { styles.slideContainer1_1 }>
-          <a className = { styles.slideLink}></a>
-          <div className = { styles.imageSectionWrapper }>
-            <div className = {
+      <div className={styles.slideContainer1}>
+        <div className={styles.slideContainer1_1}>
+          <a className={styles.slideLink}></a>
+          <div className={styles.imageSectionWrapper}>
+            <div className={
               styles.imageSection
             }>
-              <div className = {
+              <div className={
                 styles.imageWrapper1
               }>
-                <div className = {
+                <div className={
                   styles.imageWrapper1_1
                 }>
-                  <div className = {
+                  <div className={
                   styles.imageWrapper1_1_1
                   }>
-                    <img className = {styles.image} src = {place.pictureURL}></img>
-                    <div className = {
+                    <img className={styles.image} src={place.pictureURL}></img>
+                    <div className={
                     styles.imageWrapper1_1_1_1
                     }>
                     </div>
@@ -33,8 +33,6 @@ const Place = ({place}) => {
               </div>
               <div className={styles.imageWrapper2}>
                 <div className={styles.imageWrapper2_top}>
-                  <div>
-                  </div>
                   <div className={styles.imageWrapper2_top_right}>
                     <button type='button' className={styles.imageWrapper2_top_right_heartWrapper}>
                       <svg viewBox="0 0 32 32" className={styles.imageWrapper2_top_right_heart}>
@@ -44,14 +42,14 @@ const Place = ({place}) => {
                     </button>
                   </div>
                 </div>
-                <div className={styles.imageWrapper2_bottom}>
+                {/* <div className={styles.imageWrapper2_bottom}>
                   <div className={styles.imageWrapper2_bottom_leftside}>
                   </div>
                   <div className={styles.imageWrapper2_bottom_rightside}>
                   </div>
                   <div className={styles.imageWrapper2_bottom_bottomside}>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
@@ -99,7 +97,6 @@ const Place = ({place}) => {
               </span>
             </div>
           </div>
-
         </div>
       </div>
     </li>
