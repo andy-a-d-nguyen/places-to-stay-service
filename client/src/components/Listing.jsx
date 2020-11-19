@@ -13,12 +13,12 @@ class Listing extends React.Component {
     }
 
     this.getListing = this.getListing.bind(this);
+    // this.handleLike = this.handleLike.bind(this);
   }
 
   // get data from db on page load
   componentDidMount() {
-    // window.addEventListener('load', this.getListing(window.location.pathname));
-    this.getListing(window.location.pathname);
+    window.addEventListener('load', this.getListing(window.location.pathname));
   }
 
   getListing(path) {
@@ -36,7 +36,20 @@ class Listing extends React.Component {
     });
   }
 
+  // a method to set liked to true and to be passed to Place component
+  // takes in an event and an index
+  // handleLike(index, event) {
+  //   const liked = this.state.listing.morePlacesID[index].liked;
+  //   this.setState({
+  //     liked: !liked
+  //   });
+  // }
+
   render() {
+    // const liked = this.state.listing.morePlacesID[index].liked;
+    // const style = {
+    //   fill: liked ? 'red' : 'none'
+    // }
     const places = this.state.listing.morePlacesID;
     // console.log(places);
     // If there is nothing in this.state (because API call has not gone through),
@@ -83,11 +96,14 @@ class Listing extends React.Component {
             </div>
             <div className={styles.sliderContainerBottom}>
               <ul className={styles.slider}>
-                {places.map((place, key) => {
+                {places.map((place, index) => {
                   return (
                     <Place
-                    key = {place.listingID}
-                    place = {place}
+                    key={place.listingID}
+                    index={index}
+                    place={place}
+                    // handleLike={this.handleLike}
+                    // style={style}
                     />
                   )
                 })}
