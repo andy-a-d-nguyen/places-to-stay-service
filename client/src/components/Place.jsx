@@ -9,7 +9,7 @@ const Place = ({place}) => {
     <li className={styles.slideContainerWrapper}>
       <div className={styles.slideContainer1}>
         <div className={styles.slideContainer1_1}>
-          <a className={styles.slideLink}></a>
+          <a className={styles.slideLink} href={`http://localhost:3004/rooms/${place.listingID}`}></a>
           <div className={styles.imageSectionWrapper}>
             <div className={
               styles.imageSection
