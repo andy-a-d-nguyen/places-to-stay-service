@@ -1,0 +1,295 @@
+.slideContainerWrapper {
+  border-width: 0px 10px;
+  max-width: 33.3333%;
+  flex: 0 0 33.3333%;
+  border-style: solid;
+  border-color: transparent;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
+.slideContainer1 {
+  height: 100%;
+}
+
+.slideContainer1_1 {
+  position: relative;
+}
+
+.slideLink {
+  border-radius: 8px;
+  display: block;
+  height: 100%;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  color: inherit;
+  text-decoration: none;
+  font-family: inherit;
+  font-size: 100%;
+  cursor: pointer;
+}
+
+.imageSectionWrapper {
+  margin-bottom: 10px;
+}
+
+.imageSection {
+  border-radius: 8px;
+  contain: content;
+  position: relative;
+  mask-image: -webkit-radial-gradient(center, white, black);
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.imageSection::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  border-radius: inherit;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  pointer-events: none;
+}
+
+.imageWrapper1 {
+  display: block;
+}
+
+.imageWrapper1_1 {
+  padding-top: 66.6667%;
+  position: relative;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.imageWrapper1_1_1 {
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  position: static;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+.imageWrapper1_1_1_1 {
+  background-size: cover;
+  display: none;
+  background-image: none;
+  vertical-align: bottom;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.imageWrapper2 {
+  -webkit-box-pack: justify;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  bottom: 0px;
+  left: 0px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  pointer-events: none;
+}
+
+.imageWrapper2::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  border-radius: inherit;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  pointer-events: none;
+}
+
+.imageWrapper2_top {
+  padding: 8px;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+}
+
+.imageWrapper2_top_right {
+  float: right;
+  pointer-events: auto;
+  margin-top: -5px;
+  margin-right: -3px;
+}
+
+.imageWrapper2_top_right_heartWrapper {
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  background: transparent;
+  touch-action: manipulation;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+  border-radius: 50%;
+  outline: none;
+  padding: 2px 0px 0px;
+  transition: -ms-transform 0.25s ease 0s, -webkit-transform 0.25s ease 0s, transform 0.25s ease 0s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  color: rgb(34, 34, 34);
+  margin: 0px;
+  width: 32px;
+  height: 32px;
+}
+
+.imageWrapper2_top_right_heart {
+  display: block;
+  fill: rgba(0, 0, 0, 0.5);
+  height: 24px;
+  width: 24px;
+  stroke: rgb(255, 255, 255);
+  stroke-width: 2;
+  overflow: visible;
+}
+
+
+.scoreAndReviewSectionWrapper {
+  margin-bottom: 6px;
+  -webkit-box-align: center;
+  font-size: 14px;
+  line-height: 18px;
+  align-items: center;
+  display: flex;
+  width: 100%;
+}
+
+.scoreAndReviewSection1 {
+  margin-right: 10px;
+  animation-duration: 0.3s;
+  animation-name: keyframe_18jn58a;
+  animation-timing-function: ease-in-out;
+  opacity: 1;
+  visibility: visible;
+}
+
+.scoreAndReviewSection1_1 {
+  -webkit-box-align: center;
+  align-items: center;
+  display: flex;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.placeStarSectionWrapper {
+  -webkit-box-align: center;
+  align-items: center;
+  display: flex;
+  margin-right: 4px;
+  color: rgb(255, 56, 92);
+}
+
+.placeStarSection {
+  height: 14px;
+  width: 14px;
+  fill: currentcolor;
+}
+
+.placeScore {
+  color: rgb(34, 34, 34) ;
+}
+
+.placeReviewCount {
+  color: rgb(113, 113, 113) ;
+}
+
+.roomAndBedSectionWrapper {
+  margin-bottom: 2px;
+  color: #222222;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  max-height: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.roomAndBedSection {
+  margin: 0px;
+  padding: 0px;
+}
+
+.roomSection {
+  display: inline-block ;
+}
+
+.bedSection {
+  display: inline-block;
+}
+
+.roomNameSection {
+  max-height: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  font-weight: 400;
+  color: #222222;
+  word-break: break-all;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.costSectionWrapper {
+  margin-top: 4px;
+  position: relative;
+}
+
+.costSection {
+  -webkit-box-align: center;
+  align-items: center;
+  color: rgb(34, 34, 34);
+  display: flex;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.costPerNight {
+  font-weight: 800 ;
+}
