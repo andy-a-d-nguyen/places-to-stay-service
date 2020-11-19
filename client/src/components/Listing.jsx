@@ -17,13 +17,16 @@ class Listing extends React.Component {
 
   // get data from db on page load
   componentDidMount() {
-    window.addEventListener('load', this.getListing);
+    // window.addEventListener('load', this.getListing(window.location.pathname));
+    this.getListing(window.location.pathname);
   }
 
-  getListing() {
-    axios.get('/api/rooms/12')
+  getListing(path) {
+    console.log(path);
+    axios.get(`${path}places`)
+    // axios.get('/rooms/12')
     .then((res) => {
-      // console.log(res);
+      console.log(res);
       this.setState({ // this triggers a re-render
         listing: res.data[0],
       })
