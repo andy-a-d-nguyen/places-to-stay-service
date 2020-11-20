@@ -1,17 +1,16 @@
 /* eslint-disable */
 import React from 'react';
 import styles from './Place.module.css';
-// import App from '../index.js'
+import mockData from '../../../mockData.js'
 
-// const Place = (props) => {
 class Place extends React.Component {
-  // console.log(place);
+  
   constructor(props) {
     super(props); // gain the ability to use this.props in constructor
 
     this.state = {
-      place: this.props.place
-    }
+      place: this.props.place ? this.props.place : mockData[0].morePlacesID[0],
+    };
 
     this.handleLike = this.handleLike.bind(this);
   }
@@ -31,7 +30,7 @@ class Place extends React.Component {
     const style = {
       fill: liked ? 'red' : 'none'
     }
-    const place = this.props.place;
+    const place = this.state.place;
     return (
       <li className={styles.slideContainerWrapper}>
         <div className={styles.slideContainer1}>

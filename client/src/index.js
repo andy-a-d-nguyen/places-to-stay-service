@@ -2,7 +2,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Listing from './components/Listing.jsx';
-const axios = require('axios');
 
 const App = () => {
   return (

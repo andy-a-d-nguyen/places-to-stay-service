@@ -1,0 +1,167 @@
+/* eslint-disable */
+module.exports = [
+  {
+      "_id": "5fb5b94f7ef47dcb654487c7",
+      "listingID": 4,
+      "listingName": "Cassandra Brook",
+      "morePlacesID": [
+          {
+              "_id": "5fb5b94f7ef47dcb654487c8",
+              "listingID": 50,
+              "pictureURL": "https://hrsf131-fec.s3-us-west-1.amazonaws.com/pexels-saviesa-home-2089698.jpg",
+              "locationName": "Erdman Spring",
+              "liked": false,
+              "score": 5.56,
+              "reviewCount": 39,
+              "roomType": "Refined Soft Computer",
+              "roomName": "Awesome Granite Soap",
+              "bedCount": 2,
+              "costPerNight": 132
+          },
+          {
+              "_id": "5fb5b94f7ef47dcb654487ca",
+              "listingID": 4,
+              "pictureURL": "https://hrsf131-fec.s3-us-west-1.amazonaws.com/pexels-saviesa-home-2089698.jpg",
+              "locationName": "Shanahan Bridge",
+              "liked": false,
+              "score": 4.24,
+              "reviewCount": 66,
+              "roomType": "Handmade Cotton Salad",
+              "roomName": "Small Rubber Bike",
+              "bedCount": 1,
+              "costPerNight": 222
+          },
+          {
+              "_id": "5fb5b94f7ef47dcb654487cc",
+              "listingID": 28,
+              "pictureURL": "https://hrsf131-fec.s3-us-west-1.amazonaws.com/pexels-pixabay-259588.jpg",
+              "locationName": "Ullrich Inlet",
+              "liked": false,
+              "score": 3.22,
+              "reviewCount": 159,
+              "roomType": "Handmade Steel Towels",
+              "roomName": "Gorgeous Soft Sausages",
+              "bedCount": 1,
+              "costPerNight": 179
+          },
+          {
+              "_id": "5fb5b94f7ef47dcb654487ce",
+              "listingID": 74,
+              "pictureURL": "https://hrsf131-fec.s3-us-west-1.amazonaws.com/arcwind--OKp-rhSWE4-unsplash.jpg",
+              "locationName": "Conner Islands",
+              "liked": false,
+              "score": 4.53,
+              "reviewCount": 0,
+              "roomType": "Licensed Fresh Chips",
+              "roomName": "Rustic Metal Towels",
+              "bedCount": 1,
+              "costPerNight": 197
+          },
+          {
+              "_id": "5fb5b94f7ef47dcb654487d0",
+              "listingID": 44,
+              "pictureURL": "https://hrsf131-fec.s3-us-west-1.amazonaws.com/pexels-tom%C3%A1%C5%A1-mal%C3%ADk-2581922.jpg",
+              "locationName": "Jacobson Estates",
+              "liked": false,
+              "score": 3.17,
+              "reviewCount": 17,
+              "roomType": "Awesome Frozen Table",
+              "roomName": "Handmade Rubber Fish",
+              "bedCount": 2,
+              "costPerNight": 105
+          },
+          {
+              "_id": "5fb5b94f7ef47dcb654487d2",
+              "listingID": 59,
+              "pictureURL": "https://hrsf131-fec.s3-us-west-1.amazonaws.com/pexels-pixabay-259588.jpg",
+              "locationName": "Garfield Expressway",
+              "liked": false,
+              "score": 1.31,
+              "reviewCount": 40,
+              "roomType": "Rustic Plastic Towels",
+              "roomName": "Awesome Steel Car",
+              "bedCount": 1,
+              "costPerNight": 104
+          },
+          {
+              "_id": "5fb5b94f7ef47dcb654487d4",
+              "listingID": 97,
+              "pictureURL": "https://hrsf131-fec.s3-us-west-1.amazonaws.com/pexels-tom%C3%A1%C5%A1-mal%C3%ADk-2581922.jpg",
+              "locationName": "Erna Court",
+              "liked": false,
+              "score": 4.94,
+              "reviewCount": 145,
+              "roomType": "Refined Wooden Gloves",
+              "roomName": "Awesome Frozen Gloves",
+              "bedCount": 1,
+              "costPerNight": 228
+          },
+          {
+              "_id": "5fb5b94f7ef47dcb654487d6",
+              "listingID": 20,
+              "pictureURL": "https://hrsf131-fec.s3-us-west-1.amazonaws.com/arcwind--OKp-rhSWE4-unsplash.jpg",
+              "locationName": "Oberbrunner Plaza",
+              "liked": false,
+              "score": 2.67,
+              "reviewCount": 181,
+              "roomType": "Rustic Granite Chicken",
+              "roomName": "Handmade Concrete Chicken",
+              "bedCount": 2,
+              "costPerNight": 116
+          },
+          {
+              "_id": "5fb5b94f7ef47dcb654487d8",
+              "listingID": 63,
+              "pictureURL": "https://hrsf131-fec.s3-us-west-1.amazonaws.com/pexels-saviesa-home-2089698.jpg",
+              "locationName": "Sam Circles",
+              "liked": false,
+              "score": 3.63,
+              "reviewCount": 130,
+              "roomType": "Rustic Metal Sausages",
+              "roomName": "Intelligent Soft Ball",
+              "bedCount": 2,
+              "costPerNight": 77
+          },
+          {
+              "_id": "5fb5b94f7ef47dcb654487da",
+              "listingID": 43,
+              "pictureURL": "https://hrsf131-fec.s3-us-west-1.amazonaws.com/pexels-pixabay-259588.jpg",
+              "locationName": "Pfannerstill Fall",
+              "liked": false,
+              "score": 1.39,
+              "reviewCount": 77,
+              "roomType": "Rustic Wooden Tuna",
+              "roomName": "Fantastic Fresh Cheese",
+              "bedCount": 2,
+              "costPerNight": 142
+          },
+          {
+              "_id": "5fb5b94f7ef47dcb654487dc",
+              "listingID": 71,
+              "pictureURL": "https://hrsf131-fec.s3-us-west-1.amazonaws.com/deborah-cortelazzi-gREquCUXQLI-unsplash.jpg",
+              "locationName": "Blick Pass",
+              "liked": false,
+              "score": 4.21,
+              "reviewCount": 6,
+              "roomType": "Handmade Plastic Table",
+              "roomName": "Small Metal Pants",
+              "bedCount": 1,
+              "costPerNight": 78
+          },
+          {
+              "_id": "5fb5b94f7ef47dcb654487de",
+              "listingID": 9,
+              "pictureURL": "https://hrsf131-fec.s3-us-west-1.amazonaws.com/pexels-pixabay-262405.jpg",
+              "locationName": "Kertzmann Plain",
+              "liked": false,
+              "score": 5.36,
+              "reviewCount": 54,
+              "roomType": "Small Concrete Shirt",
+              "roomName": "Gorgeous Metal Salad",
+              "bedCount": 1,
+              "costPerNight": 33
+          }
+      ],
+      "__v": 0
+  }
+]

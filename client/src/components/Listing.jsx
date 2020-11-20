@@ -2,7 +2,7 @@
 import React from 'react';
 import Place from './Place.jsx';
 import styles from './Listing.module.css';
-const axios = require('axios');
+import axios from 'axios';
 
 class Listing extends React.Component {
   constructor(props) {
@@ -13,18 +13,16 @@ class Listing extends React.Component {
     }
 
     this.getListing = this.getListing.bind(this);
-    // this.handleLike = this.handleLike.bind(this);
   }
 
   // get data from db on page load
   componentDidMount() {
-    window.addEventListener('load', this.getListing(window.location.pathname));
+    this.getListing(window.location.pathname);
   }
 
   getListing(path) {
-    console.log(path);
+    // console.log(path);
     axios.get(`${path}places`)
-    // axios.get('/rooms/12')
     .then((res) => {
       console.log(res);
       this.setState({ // this triggers a re-render
@@ -36,20 +34,7 @@ class Listing extends React.Component {
     });
   }
 
-  // a method to set liked to true and to be passed to Place component
-  // takes in an event and an index
-  // handleLike(index, event) {
-  //   const liked = this.state.listing.morePlacesID[index].liked;
-  //   this.setState({
-  //     liked: !liked
-  //   });
-  // }
-
   render() {
-    // const liked = this.state.listing.morePlacesID[index].liked;
-    // const style = {
-    //   fill: liked ? 'red' : 'none'
-    // }
     const places = this.state.listing.morePlacesID;
     // console.log(places);
     // If there is nothing in this.state (because API call has not gone through),
@@ -58,7 +43,7 @@ class Listing extends React.Component {
       return null;
     }
     return (
-      <div >
+      <div>
         <div className={styles.sliderContainerWrapper}>
           <div className={styles.sliderContainer}>
             <div className={styles.sliderContainerTop}>
@@ -102,14 +87,11 @@ class Listing extends React.Component {
                     key={place.listingID}
                     index={index}
                     place={place}
-                    // handleLike={this.handleLike}
-                    // style={style}
                     />
                   )
                 })}
               </ul>
             </div>
-
           </div>
         </div>
       </div>
