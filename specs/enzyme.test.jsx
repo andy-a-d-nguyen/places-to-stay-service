@@ -1,20 +1,49 @@
-// import React from 'react';
-// import { mount, shallow } from 'enzyme';
+/* eslint-disable */
+import React from 'react';
+import TestRenderer from 'react-test-renderer';
+import { shallow, mount, render } from 'enzyme';
+import Listing from '../client/src/components/Listing.jsx';
+import Place from '../client/src/components/Place.jsx';
+import mockData from '../mockData.js';
 
-// function Fixture() {
-//   return (
-//     <div>
-//       <input id="checked" defaultChecked />
-//       <input id="not" defaultChecked={false} />
-//       <input id="tertiary" defaultChecked checked={false} />
-//     </div>
-//   );
-// }
+describe('<Listing />', () => {
 
-// describe('<Fixture />', () => {
-//   it('assert checked', () => {
-//     const wrapper = mount(<Fixture />); // mount/render/shallow when applicable
-//     expect(wrapper.find('#checked')).toBeChecked();
-//     expect(wrapper.find('#not')).not.toBeChecked();
-//   });
-// });
+  test('mounting a <Listing />', () => {
+    const testComponent = TestRenderer.create(
+      <Listing />
+    );
+
+    let tree = testComponent.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+
+  const wrapper = mount(<Listing />);
+
+  test('should not render <Place /> with no data', () => {
+    expect(wrapper.find(Place)).toHaveLength(0);
+  })
+
+  test('should render <Place /> with data', () => {
+    wrapper.setState({listing: mockData[0]});
+    expect(wrapper.find(Place)).toHaveLength(12);
+  })
+
+  test('should contain ul', () => {
+    wrapper.setState({listing: mockData[0]});
+    expect(wrapper.exists('ul')).toBeTruthy();
+  })
+})
+
+describe('<Place />', () => {
+
+  const wrapper = mount(<Place />);
+  wrapper.setState({place: mockData[0].morePlacesID[0]});
+
+  test('should contain li', () => {
+    expect(wrapper.exists('li')).toBeTruthy();
+  })
+
+  test('should contain ol', () => {
+    expect(wrapper.exists('ol')).toBeTruthy();
+  })
+});
