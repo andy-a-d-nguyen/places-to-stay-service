@@ -30,12 +30,14 @@ class Place extends React.Component {
     const style = {
       fill: liked ? 'red' : 'none'
     }
+    const path = window.location.href;
+    let port = path.includes('3000') ? '3000' : '3004';
     const place = this.state.place;
     return (
       <li className={styles.slideContainerWrapper}>
         <div className={styles.slideContainer1}>
           <div className={styles.slideContainer1_1}>
-            <a className={styles.slideLink} href={`http://localhost:3004/${place.listingID}`} target='_blank'></a>
+            <a className={styles.slideLink} href={`http://localhost:${port}/${place.listingID}`} target='_blank'></a>
             <div className={styles.imageSectionWrapper}>
               <div className={
                 styles.imageSection
