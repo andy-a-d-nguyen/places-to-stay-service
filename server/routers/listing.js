@@ -5,6 +5,9 @@ const listingController = require('../../db/controllers/listing.js');
 const router = express.Router();
 
 router.route('/rooms/:id/places')
+// router.route('/rooms/:id/')
+// router.route('/main.js')
+// router.route('/')
   .get((req, res) => {
     const { id } = req.params;
     listingController.findOne(id, (err, data) => {

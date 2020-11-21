@@ -9,7 +9,13 @@ app.use(express.json());
 
 // app.use(express.static('public/dist'));
 
-app.use('/rooms/:id', express.static('public/dist'));
+// app.use('/', express.static('public/dist'));
+app.use('/rooms/:id/', express.static('public/dist'));
+// app.use('/rooms/:id/places', express.static('public/dist'));
+// app.use('/rooms/:id/', express.static('public/dist/main.js'));
+
+// app.use('/rooms/:id/places', express.static('public/dist/'));
+// app.use('/main.js', express.static('public/dist/main.js'));
 
 app.use(listingRouter); // if using middleware to listen to requests, do not put the path to listen to in app.use. That will be handled by the middleware
 
