@@ -45,6 +45,7 @@
     "jest-environment-enzyme": "^7.1.2",
     "jest-enzyme": "^7.1.2",
     "jest-mock-axios": "^4.2.1",
+    "morgan": "^1.10.0",
     "nodemon": "^2.0.6",
     "react-test-renderer": "^16.14.0",
     "style-loader": "^2.0.0",

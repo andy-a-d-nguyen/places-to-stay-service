@@ -4,11 +4,9 @@ const listingController = require('../../db/controllers/listing.js');
 // create a route handler
 const router = express.Router();
 
-router.route('/rooms/:id/places')
-// router.route('/rooms/:id/')
-// router.route('/main.js')
-// router.route('/')
+router.route('/api/:id/places')
   .get((req, res) => {
+    console.log('proxy req', req);
     const { id } = req.params;
     listingController.findOne(id, (err, data) => {
       if (err) {
