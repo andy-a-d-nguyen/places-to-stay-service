@@ -4,7 +4,7 @@ import styles from './Place.module.css';
 import mockData from '../../../mockData.js'
 
 class Place extends React.Component {
-  
+
   constructor(props) {
     super(props); // gain the ability to use this.props in constructor
 
@@ -35,7 +35,7 @@ class Place extends React.Component {
       <li className={styles.slideContainerWrapper}>
         <div className={styles.slideContainer1}>
           <div className={styles.slideContainer1_1}>
-            <a className={styles.slideLink} href={`http://localhost:3004/rooms/${place.listingID}`} target='_blank'></a>
+            <a className={styles.slideLink} href={`http://localhost:3004/${place.listingID}`} target='_blank'></a>
             <div className={styles.imageSectionWrapper}>
               <div className={
                 styles.imageSection
