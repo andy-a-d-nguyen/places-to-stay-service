@@ -1,11 +1,11 @@
 /* eslint-disable */
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Listing from './components/Listing.jsx';
+import ListingRewrite from './components/Listing/ListingRewrite.jsx';
 
 const App = () => {
   return (
-    <Listing />
+    <ListingRewrite />
   )
 }
 

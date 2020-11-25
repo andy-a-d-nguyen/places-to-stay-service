@@ -6,7 +6,7 @@ const router = express.Router();
 
 router.route('/api/:id/places')
   .get((req, res) => {
-    console.log('proxy req', req);
+    // console.log('proxy req', req);
     const { id } = req.params;
     listingController.findOne(id, (err, data) => {
       if (err) {
