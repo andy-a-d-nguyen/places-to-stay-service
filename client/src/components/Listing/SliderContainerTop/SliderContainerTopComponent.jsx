@@ -13,7 +13,6 @@ const SliderContainerTop = styled.div`
   padding-bottom: 24px;
 `;
 
-// .sliderContainerTop_left1_1
 const SliderContainerTopLeft = styled.div`
   color: rgb(34, 34, 34);
   font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
@@ -22,7 +21,6 @@ const SliderContainerTopLeft = styled.div`
   line-height: 26px;
 `;
 
-// .sliderContainerTop_left1_1_1 h2
 const SliderContainerTopLeftHeading = styled.h2`
   color: inherit;
   font-size: 1em;
@@ -32,7 +30,6 @@ const SliderContainerTopLeftHeading = styled.h2`
   padding: 0px;
 `;
 
-// .sliderContainerTop_right div
 const SliderContainerTopRight = styled.div`
   -webkit-box-align: center;
   align-items: center;
@@ -41,7 +38,6 @@ const SliderContainerTopRight = styled.div`
 `;
 
 const SliderContainerTopComponent = ({moveLeft, moveRight}) => {
-  // console.log(moveLeft);
   return (
     <SliderContainerTop>
       <div styles={{paddingBottom: '0px'}}>

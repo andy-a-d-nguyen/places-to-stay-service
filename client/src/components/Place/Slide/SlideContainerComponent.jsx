@@ -6,7 +6,6 @@ import ScoreAndReviewSectionComponent from './ScoreAndReviewSection/ScoreAndRevi
 import RoomAndBedSectionComponent from './RoomAndBedSection/RoomAndBedSectionComponent.jsx';
 import CostSectionComponent from './CostSection/CostSectionComponent.jsx';
 
-// .slideLink a class="_sqvp1j"
 const SlideHyperlink = styled.a`
   border-radius: 8px;
   display: block;
@@ -22,7 +21,6 @@ const SlideHyperlink = styled.a`
   cursor: pointer;
 `;
 
-// .roomNameSection div
 const RoomNameSectionWrapper = styled.div`
   max-height: 20px;
   overflow: hidden;
@@ -38,7 +36,6 @@ const RoomNameSectionWrapper = styled.div`
 `;
 
 const SlideContainerComponent = ({props, handleLike}) => {
-  // console.log(props);
   const {listingID} = props.place;
   const {roomName} = props.place;
   const handleClick = (event) => {

@@ -1,8 +1,8 @@
 /* eslint-disable */
 import React from 'react';
 import styled from 'styled-components';
+import ListModalComponent from '../../../../Modal/ListModalComponent.jsx';
 
-// imageWrapper2_top_right_heartWrapper button class="_1hqqufku"
 const HeartContainer = styled.button`
   -webkit-box-pack: center;
   -webkit-box-align: center;
@@ -28,10 +28,8 @@ const HeartContainer = styled.button`
   margin: 0px;
   width: 32px;
   height: 32px;
-
 `;
 
-// .imageWrapper2_top_right_heart svg
 const Heart = styled.svg`
   display: block;
   fill: rgba(0, 0, 0, 0.5);
@@ -40,7 +38,6 @@ const Heart = styled.svg`
   stroke: rgb(255, 255, 255);
   stroke-width: 2;
   overflow: visible;
-
 `;
 
 class HeartComponent extends React.Component {
@@ -48,34 +45,33 @@ class HeartComponent extends React.Component {
     super(props);
 
     this.state = {
-      fill: false
+      fill: false,
+      showListModal: false,
     }
 
-    this.changeColor = this.changeColor.bind(this);
+    this.changeState = this.changeState.bind(this);
   }
 
-  changeColor(event) {
-    event.preventDefault();
+  changeState(event) {
     this.setState({
-      fill: !this.state.fill
+      fill: !this.state.fill,
+      showListModal: !this.state.showListModal,
     })
-    // console.log('clicked');
   }
 
   render() {
-    // console.log(this.props);
-    // console.log(this.props.handleLike);
     const style = {
       fill: this.state.fill ? 'red' : 'none'
     }
-
+    const {showListModal} = this.state;
     return (
       <HeartContainer
         type='button'
         onClick={this.props.handleLike}
       >
         <Heart
-          onClick={this.changeColor}
+          viewBox="0 0 32 32"
+          onClick={this.changeState}
           style={style}
         >
           <path
@@ -83,6 +79,10 @@ class HeartComponent extends React.Component {
           >
           </path>
         </Heart>
+        {showListModal ?
+          <ListModalComponent props={showListModal}>
+          </ListModalComponent>
+          : null}
       </HeartContainer>
     )
   }

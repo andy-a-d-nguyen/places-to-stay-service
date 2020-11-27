@@ -2,7 +2,6 @@
 import React from 'react';
 import styled from 'styled-components';
 
-// .roomAndBedSectionWrapper div
 const RoomAndBedSectionWrapper = styled.div`
   margin-bottom: 2px;
   color: #222222;
@@ -18,9 +17,7 @@ const RoomAndBedSectionWrapper = styled.div`
 `;
 
 const RoomAndBedSectionComponent = ({props}) => {
-  // console.log(props);
   const {roomType} = props.place;
-  // console.log(roomType);
   const {bedCount} = props.place;
   return (
     <RoomAndBedSectionWrapper>

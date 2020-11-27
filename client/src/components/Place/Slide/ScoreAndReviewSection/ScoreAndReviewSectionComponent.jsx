@@ -1,10 +1,8 @@
 /* eslint-disable */
 import React from 'react';
 import styled from 'styled-components';
-
 import PlaceStarSectionComponent from './PlaceStarSectionComponent.jsx';
 
-// .scoreAndReviewSectionWrapper div
 const ScoreAndReviewSectionWrapper = styled.div`
   margin-bottom: 6px;
   -webkit-box-align: center;
@@ -15,7 +13,6 @@ const ScoreAndReviewSectionWrapper = styled.div`
   width: 100%;
 `;
 
-// .scoreAndReviewSection1 div
 const ScoreAndReviewSection = styled.div`
   margin-right: 10px;
   animation-duration: 0.3s;
@@ -25,7 +22,6 @@ const ScoreAndReviewSection = styled.div`
   visibility: visible;
 `;
 
-// scoreAndReviewSection1_1 span
 const ScoreAndReviewSectionInner = styled.span`
   -webkit-box-align: center;
   align-items: center;
@@ -35,11 +31,8 @@ const ScoreAndReviewSectionInner = styled.span`
 `;
 
 const ScoreAndReviewSectionComponent = ({props}) => {
-  // console.log(props);
   const {score} = props.place;
-  // console.log(score);
   const {reviewCount} = props.place;
-  // console.log(reviewCount);
   return (
     <ScoreAndReviewSectionWrapper>
       <ScoreAndReviewSection>

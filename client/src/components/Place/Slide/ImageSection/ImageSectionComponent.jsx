@@ -4,7 +4,6 @@ import styled from 'styled-components';
 import ImageWrapperComponent from './ImageWrapperComponent.jsx';
 import ImageWrapper2ndComponent from './ImageWrapper2ndComponent.jsx';
 
-// .imageSection div class="_1abdu8aa"
 const ImageSectionWrapper = styled.div`
   border-radius: 8px;
   contain: content;
@@ -28,8 +27,6 @@ const ImageSectionWrapper = styled.div`
 `;
 
 const ImageSectionComponent = ({props, handleLike}) => {
-  // console.log(props);
-  // console.log(handleLike);
   const handleClick = (event) => {
     console.log('ImageSectionComponent');
   }
@@ -37,21 +34,18 @@ const ImageSectionComponent = ({props, handleLike}) => {
     <ImageSectionWrapper
     >
       <div
-
         className="_uhlm2"
         style={{
           display: 'block',
       }}
       >
         <ImageWrapperComponent props={props}>
-
         </ImageWrapperComponent>
       </div>
       <ImageWrapper2ndComponent
         props={props}
         handleLike={handleLike}>
       </ImageWrapper2ndComponent>
-
     </ImageSectionWrapper>
   )
 }

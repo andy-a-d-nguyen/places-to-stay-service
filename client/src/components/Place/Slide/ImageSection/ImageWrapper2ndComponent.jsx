@@ -3,7 +3,6 @@ import React from 'react';
 import styled from 'styled-components';
 import HeartComponent from './HeartComponent/HeartComponent.jsx';
 
-// class="_5ogqp7"
 const ImageWrapper2ndWrapper = styled.div`
   -webkit-box-pack: justify;
   -webkit-box-direction: normal;
@@ -19,7 +18,6 @@ const ImageWrapper2ndWrapper = styled.div`
   pointer-events: none;
 `;
 
-// .imageWrapper2 div class="_zjunba"
 const ImageWrapperInnerTop = styled.div`
   padding: 8px;
   -webkit-box-pack: justify;
@@ -28,7 +26,6 @@ const ImageWrapperInnerTop = styled.div`
 
 `;
 
-// class="_1gehwvz"
 const HeartContainerWrapper = styled.div`
   pointer-events: auto;
   margin-top: -5px;
@@ -37,8 +34,6 @@ const HeartContainerWrapper = styled.div`
 
 const ImageWrapper2ndComponent =
 ({props,handleLike}) => {
-  // console.log(props);
-  // console.log(handleLike);
   const handleClick = (event) => {
     console.log('ImageWrapper2ndComponent');
   };

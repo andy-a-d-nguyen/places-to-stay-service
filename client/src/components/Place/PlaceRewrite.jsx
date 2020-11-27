@@ -4,7 +4,6 @@ import styled from 'styled-components';
 import mockData from '../../../../mockData.js';
 import SlideContainerComponent from './Slide/SlideContainerComponent.jsx';
 
-// .slideContainerWrapper li class="_1w7e1y2"
 const SlideContainerListItem = styled.li`
   border-width: 0px 10px;
   max-width: 33.3333%;
@@ -14,7 +13,7 @@ const SlideContainerListItem = styled.li`
   scroll-snap-align: start;
   scroll-snap-stop: always;
   font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif;
-  transform: translateX(-${props => props.translate * 400}px);
+  transform: translateX(-${props => props.translate * 100}%);
   transition: transform ease-out ${props => props.transition}s;
 `;
 

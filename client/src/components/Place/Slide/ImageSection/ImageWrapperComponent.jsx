@@ -2,7 +2,6 @@
 import React from 'react';
 import styled from 'styled-components';
 
-// .imageWrapper1_1 div class="_hxt6u1e"
 const ImageWrapper = styled.div`
   padding-top: 66.6667%;
   position: relative;
@@ -10,7 +9,6 @@ const ImageWrapper = styled.div`
   background-repeat: no-repeat;
 `;
 
-// .imageWrapper1_1_1 div class="_4626ulj"
 const ImageWrapperInner = styled.div`
   -webkit-box-pack: center;
   -webkit-box-align: center;
@@ -25,7 +23,6 @@ const ImageWrapperInner = styled.div`
 
 `;
 
-// class="_91slf2a"
 const Image = styled.img`
   object-fit: cover;
   height: 100%;
@@ -38,7 +35,6 @@ const Image = styled.img`
 
 `;
 
-// .imageWrapper1_1_1_1 div class="_1xzy2"
 const ImageWrapperInnerBot = styled.div`
   -webkit-box-pack: justify;
   -webkit-box-align: center;
@@ -51,7 +47,6 @@ const ImageWrapperInnerBot = styled.div`
 
 `;
 
-// class="_1coc2b2"
 const ImageWrapperInnerBot2nd = styled.div`
   -webkit-box-pack: center;
   display: flex;
@@ -60,9 +55,7 @@ const ImageWrapperInnerBot2nd = styled.div`
 
 `;
 const ImageWrapperComponent = ({props}) => {
-  // console.log(props);
   const {pictureURL} = props.place;
-  // console.log(pictureURL);
   return (
     <ImageWrapper
       aria-busy='false'>
@@ -74,10 +67,8 @@ const ImageWrapperComponent = ({props}) => {
         >
         </Image>
         <ImageWrapperInnerBot>
-
         </ImageWrapperInnerBot>
         <ImageWrapperInnerBot2nd>
-
         </ImageWrapperInnerBot2nd>
       </ImageWrapperInner>
     </ImageWrapper>

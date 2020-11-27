@@ -2,7 +2,6 @@
 import React from 'react';
 import styled from 'styled-components';
 
-// .costSection div
 const CostSection = styled.div`
   -webkit-box-align: center;
   align-items: center;
@@ -14,7 +13,6 @@ const CostSection = styled.div`
 `;
 
 const CostSectionComponent = ({props}) => {
-  // console.log(props);
   const {costPerNight} = props.place;
   return (
     <div style={{

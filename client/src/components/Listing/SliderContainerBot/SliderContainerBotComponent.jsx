@@ -3,21 +3,18 @@ import React from 'react';
 import styled from 'styled-components';
 import PlaceReWrite from '../../Place/PlaceRewrite.jsx';
 
-// .sliderContainerBottom div
 const SliderContainerBot = styled.div`
   margin-right: 0px;
   overflow-x: hidden;
   position: relative;
 `;
 
-// .slider ul
 const Slider = styled.ul`
   margin-left: -10px;
   margin-right: -10px;
   display: flex;
   height: 100%;
   list-style: none;
-  /* overflow: hidden auto; */
   padding-left: 0px;
   margin-bottom: 0px;
   margin-top: 0px;
@@ -40,9 +37,7 @@ class SliderContainerBotComponent extends React.Component {
   }
 
   render() {
-    // console.log(this.props.places);
     const {places, activeIndex, translate, transition} = this.props;
-    console.log(translate);
     return (
       <SliderContainerBot>
         <Slider

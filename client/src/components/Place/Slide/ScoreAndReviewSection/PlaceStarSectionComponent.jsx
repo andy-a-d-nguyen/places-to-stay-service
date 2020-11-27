@@ -2,7 +2,6 @@
 import React from 'react';
 import styled from 'styled-components';
 
-// placeStarSectionWrapper span
 const PlaceStarSection = styled.span`
   -webkit-box-align: center;
   align-items: center;

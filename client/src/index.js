@@ -5,7 +5,9 @@ import ListingRewrite from './components/Listing/ListingRewrite.jsx';
 
 const App = () => {
   return (
-    <ListingRewrite />
+    <React.Fragment>
+      <ListingRewrite />
+    </React.Fragment>
   )
 }
 
