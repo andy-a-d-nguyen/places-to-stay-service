@@ -35,13 +35,4 @@ describe('insert', () => {
   });
 });
 
-// describe('Test the root path', () => {
-//   test('It should respond to a GET request', () => {
-//     return request(app)
-//       .get('/')
-//       .then((res) => {
-//         expect(res.statusCode).toBe(200);
-//       });
-//   });
-// });
 

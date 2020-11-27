@@ -20,8 +20,10 @@
     "faker": "^5.1.0",
     "mongodb": "^3.6.3",
     "mongoose": "^5.10.14",
+    "prop-types": "^15.7.2",
     "react": "^16.14.0",
-    "react-dom": "^16.14.0"
+    "react-dom": "^16.14.0",
+    "styled-components": "^5.2.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.12.1",
@@ -31,6 +33,7 @@
     "@shelf/jest-mongodb": "^1.2.3",
     "babel-jest": "^26.6.3",
     "babel-loader": "^8.2.1",
+    "babel-plugin-styled-components": "^1.12.0",
     "css-loader": "^5.0.1",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.5",
@@ -44,13 +47,14 @@
     "jest": "^26.6.3",
     "jest-environment-enzyme": "^7.1.2",
     "jest-enzyme": "^7.1.2",
-    "jest-mock-axios": "^4.2.1",
+    "morgan": "^1.10.0",
     "nodemon": "^2.0.6",
     "react-test-renderer": "^16.14.0",
     "style-loader": "^2.0.0",
-    "superagent": "^6.1.0",
-    "supertest": "^6.0.1",
     "webpack": "^5.4.0",
     "webpack-cli": "^4.2.0"
+  },
+  "resolutions": {
+    "styled-components": "^5"
   }
 }
