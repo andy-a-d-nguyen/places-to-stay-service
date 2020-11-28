@@ -6,6 +6,7 @@ import SliderContainerTopComponent from './SliderContainerTop/SliderContainerTop
 import SliderContainerBotComponent from './SliderContainerBot/SliderContainerBotComponent.jsx';
 
 const SliderContainerWrapper = styled.div`
+  padding-top: 48px;
   padding-left: 80px;
   padding-right: 80px;
   -webkit-box-pack: start;
@@ -50,10 +51,8 @@ class ListingRewrite extends React.Component{
   }
 
   getListing(path) {
-    // console.log(path);
     axios.get(`/api${path}places`)
     .then((res) => {
-      // console.log(res);
       this.setState({ // this triggers a re-render
         listing: res.data[0],
       })
@@ -86,7 +85,6 @@ class ListingRewrite extends React.Component{
   render() {
     const places = this.state.listing.morePlacesID;
     const {activeIndex, translate, transition} = this.state;
-    // console.log('ListingRewrite', translate);
     if (!places) {
       return null;
     }
