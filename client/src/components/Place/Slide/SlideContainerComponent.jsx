@@ -38,7 +38,6 @@ const RoomNameSectionWrapper = styled.div`
 const SlideContainerComponent = ({props, handleLike}) => {
   const {listingID} = props.place;
   const {roomName} = props.place;
-  console.log(window.location.hostname);
   const path = window.location.href;
   let port = path.includes('3000') ? '3000' : '3004';
   return (
