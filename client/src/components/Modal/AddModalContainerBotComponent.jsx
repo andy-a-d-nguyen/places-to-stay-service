@@ -18,6 +18,9 @@ const CreateButton = styled.button`
   outline: none;
   padding: 14px 24px;
   transition: box-shadow 0.2s ease 0s, -ms-transform 0.1s ease 0s, -webkit-transform 0.1s ease 0s, transform 0.1s ease 0s;
+  border: none;
+  background: rgb(34, 34, 34);
+  color: rgb(255, 255, 255);
   width: 100%;
 
   &:disabled {
