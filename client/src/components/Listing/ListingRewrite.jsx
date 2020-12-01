@@ -9,6 +9,7 @@ const SliderContainerWrapper = styled.div`
   padding-top: 48px;
   padding-left: 80px;
   padding-right: 80px;
+  padding-bottom: 48px;
   -webkit-box-pack: start;
   -webkit-box-align: stretch;
   display: flex;
