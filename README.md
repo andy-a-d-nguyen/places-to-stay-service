@@ -17,7 +17,8 @@
 
 ## Usage
 
-> Some usage instructions
+"npm run server-prod" : runs the express server
+"npm run react-dev" : compiles components and watches for changes
 
 ## Requirements
 
