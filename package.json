@@ -9,7 +9,8 @@
     "node": ">=6.13.0"
   },
   "scripts": {
-    "react-dev": "webpack",
+    "webpack-dev": "webpack --mode=development --watch",
+    "webpack-prod": "webpack",
     "test": "jest specs/jest.test.js specs/enzyme.test.jsx",
     "seed": "node seed.js",
     "server-dev": "nodemon server/index.js",

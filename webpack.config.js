@@ -29,6 +29,4 @@ module.exports = {
     extensions: ['*', '.js', '.jsx'],
   },
   plugins: [new CompressionPlugin()],
-  mode: 'development',
-  watch: true,
 };

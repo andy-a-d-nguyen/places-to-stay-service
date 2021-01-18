@@ -1,6 +1,4 @@
-# Project Name
-
-> AirBnB
+# AirBnB Listing Carousel Reimplementation
 
 ## Related Projects
 
@@ -11,30 +9,37 @@
 
 ## Table of Contents
 
+1. [Introduction](#Introduction)
 1. [Usage](#Usage)
 1. [Requirements](#requirements)
-1. [Development](#development)
+
+## Introduction
+
+This project was the first project in which I utilized all the knowledge I learned at Hack Reactor thus far in order to create a front end that attempts to mimic the look and feel of an existing product listing of a popular web application while using a simple database that stores 100 records maximum. This project was done in a team of four while I was in charge of recreating AirBnB's "More Places to Stay" carousel from scratch.
 
 ## Usage
 
-"npm run server-prod" : runs the express server
-"npm run react-dev" : compiles components and watches for changes
+```sh
+npm run server-dev : runs the express server and watch for changes in server files
+
+npm run server-prod : runs the express server in production
+
+npm run webpack-dev : compiles components and watches for changes in source files
+
+npm run webpack-prod : compiles components for production
+```
 
 ## Requirements
 
 An `nvmrc` file is included if using [nvm](https://github.com/creationix/nvm).
 
-- Node 6.13.0
-- etc
-
-## Development
+- Node >= 6.13.0
 
 ### Installing Dependencies
 
 From within the root directory:
 
 ```sh
-npm install -g webpack
 npm install
 ```
 
